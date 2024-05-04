@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".RegisteredCourseActivity">
+
+    <TextView
+        android:id="@+id/course_name_label"
+        style="@style/DetailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Name:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Course Fee -->
+
+    <!-- Duration -->
+
+    <TextView
+        android:id="@+id/course_fee_text_view"
+        style="@style/DetailText"
+        android:layout_width="361dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/course_fee_label"
+        app:layout_constraintTop_toBottomOf="@id/course_fee_label" />
+
+    <TextView
+        android:id="@+id/starting_date_text_view"
+        style="@style/DetailText"
+        android:layout_width="358dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/starting_date_label"
+        app:layout_constraintTop_toBottomOf="@id/starting_date_label" />
+
+    <TextView
+        android:id="@+id/closing_date_label"
+        style="@style/DetailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:text="Closing Date:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/published_date_text_view" />
+
+    <TextView
+        android:id="@+id/published_date_label"
+        style="@style/DetailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="Published Date:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/starting_date_text_view" />
+
+    <TextView
+        android:id="@+id/duration_text_view"
+        style="@style/DetailText"
+        android:layout_width="359dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/duration_label"
+        app:layout_constraintTop_toBottomOf="@id/duration_label" />
+
+    <TextView
+        android:id="@+id/published_date_text_view"
+        style="@style/DetailText"
+        android:layout_width="359dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/published_date_label"
+        app:layout_constraintTop_toBottomOf="@id/published_date_label" />
+
+    <TextView
+        android:id="@+id/closing_date_text_view"
+        style="@style/DetailText"
+        android:layout_width="355dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/closing_date_label" />
+
+    <TextView
+        android:id="@+id/course_fee_label"
+        style="@style/DetailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="80dp"
+        android:text="Course Fee:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/course_name_label" />
+
+    <TextView
+        android:id="@+id/duration_label"
+        style="@style/DetailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:text="Duration:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/course_fee_text_view" />
+
+    <TextView
+        android:id="@+id/starting_date_label"
+        style="@style/DetailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="Starting Date:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/duration_text_view" />
+
+    <TextView
+        android:id="@+id/course_name_text_view"
+        style="@style/DetailText"
+        android:layout_width="354dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/border"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/course_name_label" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="183dp"
+        android:layout_height="52dp"
+        app:srcCompat="@drawable/nibm_logo"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="737dp" />
+
+    <!-- Starting Date -->
+
+    <!-- Published Date -->
+
+    <!-- Closing Date -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

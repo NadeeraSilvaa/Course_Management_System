@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Admin.AddCourse">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/courseNameInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Course Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/courseNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/courseFeeInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseNameInputLayout"
+        android:layout_marginBottom="16dp"
+        android:hint="Course Fee">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/courseFeeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Removed branchesInputLayout and branchCodeInputLayout -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/durationInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseFeeInputLayout"
+        android:layout_marginBottom="16dp"
+        android:hint="Duration">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/durationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/startingDateInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/durationInputLayout"
+        android:layout_marginBottom="16dp"
+        android:hint="Starting Date">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/startingDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/publishedDateInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startingDateInputLayout"
+        android:layout_marginBottom="16dp"
+        android:hint="Published Date">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/publishedDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/closingDateInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/publishedDateInputLayout"
+        android:layout_marginBottom="16dp"
+        android:hint="Closing Date">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/closingDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/addCourseButton"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/closingDateInputLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_background_button"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:onClick="addCourse"
+        android:text="Add Course" />
+
+</RelativeLayout>

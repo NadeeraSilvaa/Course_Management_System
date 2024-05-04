@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1047099459083",
+    "project_id": "madproject-11285",
+    "storage_bucket": "madproject-11285.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047099459083:android:a9d40f9c54e7f20b0c690e",
+        "android_client_info": {
+          "package_name": "com.example.madproject2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9jJnKAxM6y1ENNji6Ae47-gJ5tvIdkXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047099459083:android:81ada1d8369db2350c690e",
+        "android_client_info": {
+          "package_name": "com.example.schoool"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9jJnKAxM6y1ENNji6Ae47-gJ5tvIdkXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

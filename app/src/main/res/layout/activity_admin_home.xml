@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:requiresFadingEdge="horizontal"
+    tools:context=".Admin.AdminHome">
+    <ListView
+        android:id="@+id/userListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <Button
+        android:id="@+id/addCourseBtn"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/ic_background_button"
+        android:onClick="addCourse"
+        android:text="@string/AddCourse"
+        android:textAlignment="center"
+        android:textColor="#ffffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/addCourseBranch"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="53dp"
+        android:background="@drawable/ic_background_button"
+        android:onClick="addBranch"
+        android:text="@string/AddBranch"
+        android:textAlignment="center"
+        android:textColor="#ffffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="560dp"
+        android:backgroundTint="#FF0000"
+    android:onClick="logout"
+    android:text="Logout"
+    android:textColor="#ffffffff" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="244dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="610dp"
+        android:layout_marginEnd="77dp"
+        android:src="@drawable/nibm_logo" />
+
+
+</RelativeLayout>

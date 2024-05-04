@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <!-- Profile Picture Holder -->
+
+    <!-- Name -->
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_profile_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toStartOf="@+id/profileImageView"
+        app:layout_constraintEnd_toEndOf="@+id/profileImageView"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageView"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/nameEditText"
+        app:layout_constraintEnd_toEndOf="@+id/nameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/emailEditText"
+        app:layout_constraintEnd_toEndOf="@+id/emailEditText"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Confirm Password -->
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/passwordEditText"
+        app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Address -->
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="@string/address"
+        android:inputType="textPostalAddress"
+        android:autofillHints="postalAddress"
+        app:layout_constraintStart_toStartOf="@+id/confirmPasswordEditText"
+        app:layout_constraintEnd_toEndOf="@+id/confirmPasswordEditText"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordEditText"
+        android:layout_marginTop="16dp"/>
+
+    <!-- City -->
+    <EditText
+        android:id="@+id/cityEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/city"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/addressEditText"
+        app:layout_constraintEnd_toEndOf="@+id/addressEditText"
+        app:layout_constraintTop_toBottomOf="@+id/addressEditText"
+        android:layout_marginTop="16dp"/>
+
+    <!-- NIC -->
+    <EditText
+        android:id="@+id/nicEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/nic"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/cityEditText"
+        app:layout_constraintEnd_toEndOf="@+id/cityEditText"
+        app:layout_constraintTop_toBottomOf="@+id/cityEditText"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Gender -->
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/nicEditText"
+        app:layout_constraintEnd_toEndOf="@+id/nicEditText"
+        app:layout_constraintTop_toBottomOf="@+id/nicEditText"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"/>
+
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"/>
+    </RadioGroup>
+
+    <!-- Mobile -->
+    <EditText
+        android:id="@+id/mobileEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/mobile"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/genderRadioGroup"
+        app:layout_constraintEnd_toEndOf="@+id/genderRadioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/genderRadioGroup"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="275dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/ic_background_button"
+        android:fontFamily="sans-serif"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="@+id/mobileEditText"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="@+id/mobileEditText"
+        app:layout_constraintTop_toBottomOf="@+id/mobileEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
